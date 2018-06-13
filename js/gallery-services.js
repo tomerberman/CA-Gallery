@@ -1,5 +1,7 @@
 "use strict";
 
+// modification for git check
+
 var gProjs = [];
 var gCurrProjIdx = 0;
 
