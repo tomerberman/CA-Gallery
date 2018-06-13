@@ -1,0 +1,71 @@
+
+div {
+    border-radius: 12px;
+    background-color: gray;
+    font-size: 40px;
+    padding: 5 px;
+    border: 3px;
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+    font-family: fantasy;
+}
+
+.external-body {
+    width: 308px;
+    height: 580px;
+    padding: 13px;
+}
+
+.screen {
+    height: 100px;
+    background-color: black;
+    margin: 20px;   
+    color: aquamarine;
+    
+}
+
+.op-button {
+    float: left;
+    border: 3px;
+    margin: 6px;
+    border-width: 4px;
+    background-color: yellowgreen;
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center ;
+}
+
+.equal-button {
+    width: 70px;
+    background-color:white;
+}
+
+.memory-button {
+    float: right;
+    border: 3px;
+    margin: 6px;
+    border-width: 4px;
+    background-color: lightblue;
+    width: 58px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center ;
+}
+
+.num-button {
+    float: left;
+    border: tomato;
+    border: 3px;
+    margin: 6px;
+    border-width: 4px;
+    background-color: bisque;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center ;
+}
+
+.row-1 {
+}

@@ -1,0 +1,24 @@
+body {background-color: black; color:white}
+
+.cell {width:40px; height:40px;text-align: center}
+.cell img {width:32px; height:auto}
+.floor {background-color: gray}
+.wall {background-color: brown}
+
+.collected-balls {
+    font-size: 50px;
+    color: bisque;
+}
+
+.won {
+    display: none;
+    font-size: 50px;
+    color: yellow;
+}
+
+button {
+    display: none;
+    font-size: 40px;
+    border-radius: 12px;
+    color: rgb(6, 59, 19);
+}

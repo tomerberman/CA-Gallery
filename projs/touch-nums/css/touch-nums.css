@@ -1,0 +1,74 @@
+
+
+.container {
+    background-color: aqua;
+position: absolute;
+left: 50px;
+top :50px;
+}
+
+.header {
+    background-color: orange;
+    width: fit-content;
+    transition: 2s;
+    
+}
+
+.header:hover {
+    transform: rotate(45deg); 
+    height:4em;  
+    background-color: black;
+    transition: background-color, 5s;
+    transition: transform, 1s;
+}
+
+body {
+    margin: auto;
+    width: 50%;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+  
+
+  .clock-container{
+      background-color:yellow;
+      width: 200px;
+      min-height: 10px;
+      border-radius: 10px;
+  }
+
+  .clock {
+      width: 40%;
+      margin: 0 auto;
+      font-size: 60px;
+      font-style: bold;
+  }
+
+  .tbl-nums td {
+      /* position: relativ; */
+    font-size: 60px;
+    text-align: center;
+    width:20px;  
+    height:20px;  
+    cursor: pointer;
+  }
+
+.tbl-nums {
+    position: absolute;
+}
+
+  td:hover {
+      background-color: blueviolet;
+        width: 1.5em;
+        font-size : 40px;
+        /* height: 150px; */
+      
+      transition: ease-in-out;
+      transition: .2s;
+
+  }
+
+  .clicked {
+      background-color: blue;
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="lib/bs4/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/bookshop.jpg" />
+
+        <div class="modal modal-update" style="text-align: center">Update Book Details:
+            <div><br></div>
+            <div class="input-container">
+                <span>Book Title:</span>
+                <input type="text" class="input-name-update" />
+            </div>
+            <div class="input-container">
+                <span>Book Price:</span>
+                <input type="text" class="input-price-update" />
+            </div>
+            <div class="input-container">
+                <span>Rate This Book:</span>
+                <input type="text" class="input-rating-update" />
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+            </div>
+            <button class="input-done-update" onclick="onUpdateDone()">Done</button>
+        </div>
+
+
+        <div class="modal modal-add" onkeydown="onBookInput(event)">Enter Book Details to Add, and hit Enter
+            <div class="input-container">
+                <span>Enter Book Title:</span>
+                <input type="text" class="input-name" />
+            </div>
+            <div class="input-container">
+                <span>Enter Book Price:</span>
+                <input type="text" class="input-price" />
+            </div>
+            <!-- <button class="input-done" onclick="onInputDone()">Done</button> -->
+        </div>
+
+        <div class="list-container">
+            <table class="book-table table table-striped"></table>
+        </div>
+        <button class="btn btn-add" onclick="readAndAddNewBook()">Add Book</button>
+
+
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Book Details :</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/thumbs_up.png" class="thumb-up">
+                        <img src="img/thumbs_up.png" class="thumb-down">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeDetailsModal()">Save and Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/bs4/js/bootstrap.bundle.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/books-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

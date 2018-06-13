@@ -1,0 +1,43 @@
+<!doctype html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="renderScreen()">
+    <div class="external-body">
+        <div class="screen"></div>
+        <div class="num-button"  onclick="numPressed(7)">7</div>
+        <div class="num-button"  onclick="numPressed(8)">8</div>
+        <div class="num-button"  onclick="numPressed(9)">9</div>
+        <div class="op-button"  onclick="setOp('+')">+</div>
+        <div class="num-button"  onclick="numPressed(4)">4</div>
+        <div class="num-button"  onclick="numPressed(5)">5</div>
+        <div class="num-button"  onclick="numPressed(6)">6</div>
+        <div class="op-button"  onclick="setOp('-')">-</div>
+        <div class="num-button"  onclick="numPressed(1)">1</div>
+        <div class="num-button"  onclick="numPressed(2)">2</div>
+        <div class="num-button"  onclick="numPressed(3)">3</div>
+        <div class="op-button"  onclick="setOp('/')">/</div>
+        <div class="num-button"  onclick="numPressed(0)">0</div>
+        <div class="op-button equal-button"  onclick="setOp('=')">=</div>
+        <div class="op-button equal-button" onclick="clearNums('c')">c</div>
+        <div class="op-button"  onclick="setOp('*')">*</div>
+        <div class="memory-button"  onclick="memoryOp('MC')">MC</div>
+        <div class="memory-button"  onclick="memoryOp('MR')">MR</div>
+        <div class="memory-button"  onclick="memoryOp('MS')">MS</div>
+        <div class="memory-button"  onclick="memoryOp('M+')">M+</div>
+
+    </div>
+
+    <script src="js/calculator.js"></script>
+</body>
+
+
+
+</html>
