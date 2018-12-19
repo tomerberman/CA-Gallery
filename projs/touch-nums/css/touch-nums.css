@@ -1,9 +1,9 @@
 
 
 .container {
-    background-color: aqua;
+background-color: aqua;
 position: absolute;
-left: 50px;
+/* left: 50px; */
 top :50px;
 }
 
@@ -33,6 +33,7 @@ body {
 
   .clock-container{
       background-color:yellow;
+      margin: 0 auto;
       width: 200px;
       min-height: 10px;
       border-radius: 10px;
@@ -40,7 +41,6 @@ body {
 
   .clock {
       width: 40%;
-      margin: 0 auto;
       font-size: 60px;
       font-style: bold;
   }
@@ -54,9 +54,9 @@ body {
     cursor: pointer;
   }
 
-.tbl-nums {
+/* .tbl-nums {
     position: absolute;
-}
+} */
 
   td:hover {
       background-color: blueviolet;
